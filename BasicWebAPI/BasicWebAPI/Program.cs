@@ -6,8 +6,9 @@ var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
-    app.UseOpenApi();
-    app.UseSwaggerUi3();
+    //app.UseOpenApi();
+    //app.UseSwaggerUi3();
+    app.MapOpenApi();   // This line is from Microsoft's documnentation
 }
 
 app.UseHttpsRedirection();
